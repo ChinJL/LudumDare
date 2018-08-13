@@ -21,18 +21,19 @@ public class Inventory : MonoBehaviour {
 					if (i == 2) {
 						plyerCtrl.shield.SetActive (true);
 					}
-					StartCoroutine (plyerCtrl.ReduceFloatingForce (itemList.speedReduction [i], itemList.effectTime [i]));
+					StartCoroutine (plyerCtrl.ManipulateFloatingForce (itemList.speedReduction [i], itemList.effectTime [i]));
 					StartCoroutine (plyerCtrl.ScaleImg(img,itemList.effectTime[i]));
 					yield return new WaitForSeconds (itemList.effectTime [i]);
 					img.sprite = itemList.emptySprite;
-					/*if (i == 2) {
+					if (i == 2) {
+						plyerCtrl.shield.SetActive (false);
+					}
+					if (i == 2) {
 						yield return new WaitForSeconds (itemList.shieldTriggerCd);
-						for (int j = 0; s < itemList.shieldTrigger.Length; j++) {
-							itemList.shieldTrigger [j].GetComponent<Collider> ().enabled = true;
+						for (int k = 0; k < itemList.shieldTrigger.Length; k++) {
+							itemList.shieldTrigger [k].GetComponent<Collider> ().enabled = true;
 						}
-					}*/
-
-					//yield return null;
+					}
 				}
 			}
 			ResetKey (j);

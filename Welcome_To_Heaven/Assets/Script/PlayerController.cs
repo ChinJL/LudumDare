@@ -95,10 +95,10 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	public IEnumerator ReduceFloatingForce(float reduction, float effectTime){
-		speedModifier = speedModifier + reduction;
+	public IEnumerator ManipulateFloatingForce(float floatIncrement, float effectTime){
+		speedModifier = speedModifier + floatIncrement;
 		yield return new WaitForSeconds (effectTime);
-		speedModifier = speedModifier - reduction;
+		speedModifier = speedModifier - floatIncrement;
 		yield return null;
 	}
 

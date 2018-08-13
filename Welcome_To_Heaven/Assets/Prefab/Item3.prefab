@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23585985467993974}
   - component: {fileID: 54936376732230996}
   - component: {fileID: 114030660172201010}
+  - component: {fileID: 114321112932950756}
   m_Layer: 0
   m_Name: Item3
   m_TagString: Untagged
@@ -144,6 +145,20 @@ MonoBehaviour:
   player: {fileID: 0}
   itemManager: {fileID: 0}
   itemSprite: {fileID: 21300000, guid: 5cd55690e5e2793498fe5d7fe5ded5a1, type: 3}
+--- !u!114 &114321112932950756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087747373209164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4bd426591973f4384713f6718037f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  frequency: 8
+  magnitude: 1.5
 --- !u!135 &135901426660346466
 SphereCollider:
   m_ObjectHideFlags: 1

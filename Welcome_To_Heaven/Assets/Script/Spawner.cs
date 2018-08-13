@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour {
 	private List<GameObject> spawnedItem1 = null, spawnedItem2 = null;
 	[SerializeField] private GameObject itemManager = null;
 	ItemList itemList;
-	private GameObject item3;
+	public GameObject item3;
 	private int lastNo;
 	private float minX = -6, maxX = 6;
 	private float minY = -23, maxY = 18;
@@ -38,6 +38,9 @@ public class Spawner : MonoBehaviour {
 
 		item3 = Instantiate(itemList.items [2]);
 		item3.SetActive (false);
+	}
+
+	private void Start(){
 		gameObject.SetActive (false);
 	}
 
@@ -47,7 +50,8 @@ public class Spawner : MonoBehaviour {
 	}
 
 	private void StartSpawn(){
-		StartCoroutine (SpawnItem ());
+		if (gameObject.activeSelf)
+			StartCoroutine (SpawnItem ());
 	}
 
 	private IEnumerator SpawnItem(){
