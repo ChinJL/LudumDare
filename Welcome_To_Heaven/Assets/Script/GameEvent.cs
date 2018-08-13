@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameEvent : MonoBehaviour {
 	[SerializeField] private Text readyUpText = null;
@@ -9,6 +10,7 @@ public class GameEvent : MonoBehaviour {
 	[SerializeField] private Transform cam = null;
 	[SerializeField] private GameObject inventoryCover = null, m_inventory = null;
 	[SerializeField] private GameObject spawner = null;
+	[SerializeField] private GameObject backToMainButton = null;
 
 	public bool isPreview;
 
@@ -22,6 +24,7 @@ public class GameEvent : MonoBehaviour {
 		reached_bed.enabled = false;
 		bedText.enabled = false;
 		isPreview = true;
+		backToMainButton.SetActive(false);
 	}
 
 	private void Start () {
@@ -60,7 +63,7 @@ public class GameEvent : MonoBehaviour {
 			yield return null;
 		}
 		cam.SetParent (transform);
-		player.SetActive (false);
+		player_sprite.SetActive (false);
 		anim_sleep.SetFloat (isBed, 1);
 		yield return new WaitForSeconds(16.5f);
 		CongratsEvent ();
@@ -72,14 +75,14 @@ public class GameEvent : MonoBehaviour {
 	}
 
 	[SerializeField] private Transform heaven = null;
-
+	[SerializeField] GameObject player_sprite = null;
 	public IEnumerator GoToHeaven(){
 		while (player.transform.position != heaven.position) {
 			player.transform.position = Vector3.MoveTowards (player.transform.position, heaven.position, 2.5f * Time.deltaTime);
 			yield return null;
 		}
 		cam.SetParent (transform);
-		player.SetActive (false);
+		player_sprite.SetActive (false);
 		StartCoroutine (Congrats (textPanel_heaven, reached_heaven, heavenText));
 		yield return null;
 	}
@@ -94,6 +97,11 @@ public class GameEvent : MonoBehaviour {
 		reachTxt.enabled = true;
 		yield return new WaitForSeconds (0.75f);
 		locationTxt.enabled = true;
+		backToMainButton.SetActive(true);
 		yield return null;
+	}
+
+	public void GoToMainMenu(){
+		SceneManager.LoadScene ("MainMenuScene");
 	}
 }
