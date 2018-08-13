@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\BirdFlying.cs" />
      <Compile Include="Assets\Script\GameEvent.cs" />
      <Compile Include="Assets\Script\Inventory.cs" />
      <Compile Include="Assets\Script\Item.cs" />
      <Compile Include="Assets\Script\ItemList.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\Preview.cs" />
      <Compile Include="Assets\Script\Spawner.cs" />
      <Compile Include="Assets\Script\Trigger.cs" />
  <Reference Include="UnityEngine.UI">

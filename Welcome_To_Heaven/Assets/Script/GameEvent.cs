@@ -10,6 +10,8 @@ public class GameEvent : MonoBehaviour {
 	[SerializeField] private GameObject inventoryCover = null, m_inventory = null;
 	[SerializeField] private GameObject spawner = null;
 
+	public bool isPreview;
+
 	private void Awake(){
 		readyUpText.enabled = false;
 		player.SetActive (false);
@@ -19,14 +21,19 @@ public class GameEvent : MonoBehaviour {
 		heavenText.enabled = false;
 		reached_bed.enabled = false;
 		bedText.enabled = false;
+		isPreview = true;
 	}
 
 	private void Start () {
-		Invoke ("StartReadyUp", 0.75f);
+		if (isPreview) {
+			cam.transform.position = new Vector3 (cam.transform.position.x, -26, cam.transform.position.z);
+		}
 	}
 
-	private void StartReadyUp(){
-		StartCoroutine (ReadyUp (readyUpText));
+	public void StartReadyUp(){
+		if (!isPreview) {
+			StartCoroutine (ReadyUp (readyUpText));
+		}
 	}
 
 	private IEnumerator ReadyUp(Text txt){
