@@ -65,16 +65,17 @@ public class Spawner : MonoBehaviour {
 	private void ChooseSpawnItem(){
 		int rand = 0;
 		while (rand == lastNo) {
-			rand = Random.Range (0, 2);
+			rand = Random.Range (0, 4);
 			if (rand != lastNo) {
 				break;
 			}
 		}
+		print (rand);
 		lastNo = rand;
 		if (rand == 0) {
 			for (int i = 0; i < spawnedItem1.Count; i++) {
-				if (!spawnedItem1 [i].activeInHierarchy) {
-					GameObject tempObj = spawnedItem1 [i];
+				if (!spawnedItem2 [i].activeInHierarchy) {
+					GameObject tempObj = spawnedItem2 [i];
 					Spawn (tempObj);
 					break;
 				}
@@ -82,8 +83,26 @@ public class Spawner : MonoBehaviour {
 		}
 		if (rand == 1) {
 			for (int i = 0; i < spawnedItem2.Count; i++) {
-				if (!spawnedItem1 [i].activeInHierarchy) {
+				if (!spawnedItem2 [i].activeInHierarchy) {
 					GameObject tempObj = spawnedItem2 [i];
+					Spawn (tempObj);
+					break;
+				}
+			}
+		}
+		if (rand == 2) {
+			for (int i = 0; i < spawnedItem2.Count; i++) {
+				if (!spawnedItem2 [i].activeInHierarchy) {
+					GameObject tempObj = spawnedItem2 [i];
+					Spawn (tempObj);
+					break;
+				}
+			}
+		}
+		if (rand == 3) {
+			for (int i = 0; i < spawnedItem2.Count; i++) {
+				if (!spawnedItem1 [i].activeInHierarchy) {
+					GameObject tempObj = spawnedItem1 [i];
 					Spawn (tempObj);
 					break;
 				}

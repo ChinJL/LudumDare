@@ -13,6 +13,7 @@ public class GameOverTrigger : MonoBehaviour {
 	PlayerController plyrCtrl;
 
 	[SerializeField] private GameObject audioManager = null;
+	[SerializeField] private GameObject spawner = null;
 
 	private void OnEnable(){
 		gameEvent = eventManager.GetComponent<GameEvent> ();
@@ -23,6 +24,7 @@ public class GameOverTrigger : MonoBehaviour {
 	private void OnTriggerEnter(Collider col){
 		if (col.CompareTag (s_player)) {
 			col.tag = "Untagged";
+			spawner.SetActive (false);
 			if (toBed) {
 				audioManager.GetComponent<AudioManager> ().WinSound ();
 				plyrCtrl.isPlaying = false;

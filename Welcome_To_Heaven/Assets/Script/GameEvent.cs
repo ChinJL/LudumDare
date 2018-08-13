@@ -78,11 +78,15 @@ public class GameEvent : MonoBehaviour {
 	[SerializeField] private Transform heaven = null;
 	[SerializeField] private GameObject player_sprite = null;
 	[SerializeField] private Transform roof = null;
+	[SerializeField] private GameObject soul_heaven = null;
+
 	public IEnumerator GoToHeaven(){
 		while (player.transform.position != roof.position) {
 			player.transform.position = Vector3.MoveTowards (player.transform.position, roof.position, 2.5f * Time.deltaTime);
 			yield return null;
 		}
+		player_sprite.SetActive (false);
+		soul_heaven.SetActive (true);
 		while (player.transform.position != heaven.position) {
 			player.transform.position = Vector3.MoveTowards (player.transform.position, heaven.position, 3.25f * Time.deltaTime);
 			yield return null;
