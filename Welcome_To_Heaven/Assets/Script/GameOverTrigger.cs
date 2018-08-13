@@ -12,6 +12,8 @@ public class GameOverTrigger : MonoBehaviour {
 	[SerializeField] private GameObject player = null;
 	PlayerController plyrCtrl;
 
+	[SerializeField] private GameObject audioManager = null;
+
 	private void OnEnable(){
 		gameEvent = eventManager.GetComponent<GameEvent> ();
 		m_col = GetComponent<Collider> ();
@@ -22,10 +24,12 @@ public class GameOverTrigger : MonoBehaviour {
 		if (col.CompareTag (s_player)) {
 			col.tag = "Untagged";
 			if (toBed) {
+				audioManager.GetComponent<AudioManager> ().WinSound ();
 				plyrCtrl.isPlaying = false;
 				gameEvent.StartCoroutine (gameEvent.GoToBed ());
 				m_col.enabled = false;
 			} else {
+				audioManager.GetComponent<AudioManager> ().LoseSound ();
 				plyrCtrl.isPlaying = false;
 				gameEvent.StartCoroutine (gameEvent.GoToHeaven ());
 				m_col.enabled = false;

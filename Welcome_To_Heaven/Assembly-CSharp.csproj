@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\AudioManager.cs" />
      <Compile Include="Assets\Script\BirdFlying.cs" />
      <Compile Include="Assets\Script\Bullet_MusicNote.cs" />
      <Compile Include="Assets\Script\Enemy.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Script\ItemList.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
      <Compile Include="Assets\Script\Preview.cs" />
+     <Compile Include="Assets\Script\SceneFlow.cs" />
      <Compile Include="Assets\Script\ShieldTrigger.cs" />
      <Compile Include="Assets\Script\Spawner.cs" />
      <Compile Include="Assets\Script\UpAndDown.cs" />

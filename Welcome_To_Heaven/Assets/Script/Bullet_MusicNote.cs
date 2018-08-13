@@ -24,6 +24,10 @@ public class Bullet_MusicNote : MonoBehaviour {
 		}
 	}
 
+	void Awake(){
+		gameObject.SetActive (false);
+	}
+
 	void OnEnable(){
 		int rand = Random.Range (0, musicNoteSprites.Length);
 		spriteRend.sprite = musicNoteSprites[rand];

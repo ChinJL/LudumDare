@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour {
 	private bool shoot;
 	GameEvent gameEvent;
 	[SerializeField] GameObject eventManager = null;
+	[SerializeField] GameObject audioManager = null;
+	AudioManager audioM;
 
 	private void Awake(){
 		bullets = new GameObject[noteCount];
@@ -30,6 +32,7 @@ public class Enemy : MonoBehaviour {
 			bullet.SetActive (false);
 		}
 		gameEvent = eventManager.GetComponent<GameEvent> ();
+		audioM = audioManager.GetComponent<AudioManager> ();
 	}
 
 	private void Start(){
@@ -97,6 +100,7 @@ public class Enemy : MonoBehaviour {
 
 	public IEnumerator ShootOneByOne(){
 		for (int i = 0; i < bullets.Length; i++) {
+			audioM.Angel ();
 			bullets [i].SetActive (true);
 			bullets [i].transform.position = bulletSpawn.transform.position;
 			bullets [i].GetComponent<Rigidbody> ().AddForce (dir*shootForce, ForceMode.Impulse);

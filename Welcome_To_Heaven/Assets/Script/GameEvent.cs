@@ -11,7 +11,7 @@ public class GameEvent : MonoBehaviour {
 	[SerializeField] private GameObject inventoryCover = null, m_inventory = null;
 	[SerializeField] private GameObject spawner = null;
 	[SerializeField] private GameObject backToMainButton = null;
-
+	[SerializeField] private GameObject audioManager = null;
 	public bool isPreview;
 
 	private void Awake(){
@@ -31,6 +31,7 @@ public class GameEvent : MonoBehaviour {
 		if (isPreview) {
 			cam.transform.position = new Vector3 (cam.transform.position.x, -26, cam.transform.position.z);
 		}
+		audioManager.GetComponent<AudioManager> ().PlayMusic ();
 	}
 
 	public void StartReadyUp(){
@@ -75,10 +76,15 @@ public class GameEvent : MonoBehaviour {
 	}
 
 	[SerializeField] private Transform heaven = null;
-	[SerializeField] GameObject player_sprite = null;
+	[SerializeField] private GameObject player_sprite = null;
+	[SerializeField] private Transform roof = null;
 	public IEnumerator GoToHeaven(){
+		while (player.transform.position != roof.position) {
+			player.transform.position = Vector3.MoveTowards (player.transform.position, roof.position, 2.5f * Time.deltaTime);
+			yield return null;
+		}
 		while (player.transform.position != heaven.position) {
-			player.transform.position = Vector3.MoveTowards (player.transform.position, heaven.position, 2.5f * Time.deltaTime);
+			player.transform.position = Vector3.MoveTowards (player.transform.position, heaven.position, 3.25f * Time.deltaTime);
 			yield return null;
 		}
 		cam.SetParent (transform);
