@@ -146,8 +146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.638, y: -263}
-  m_SizeDelta: {x: 265.7, y: 101.6}
+  m_AnchoredPosition: {x: -296, y: -315.19998}
+  m_SizeDelta: {x: 389.7, y: 149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88119104
 MonoBehaviour:
@@ -421,7 +421,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BGM
+  m_Text: 'BGM
+
+
+    Digital Memories - Unicorn Heads'
 --- !u!222 &216911766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -453,9 +456,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a5e025585304dd94f9b446eba9c12072, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.596
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -536,6 +539,115 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1362917421}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &431687188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 431687190}
+  - component: {fileID: 431687189}
+  m_Layer: 0
+  m_Name: Nothing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &431687189
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431687188}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &431687190
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431687188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1362917421}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534955190
 GameObject:
@@ -635,8 +747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -395, y: -26}
-  m_SizeDelta: {x: 977, y: 651}
+  m_AnchoredPosition: {x: -395, y: -49.6}
+  m_SizeDelta: {x: 977, y: 698.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543563194
 MonoBehaviour:
@@ -684,7 +796,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "SFX\nAngel\nhttps://www.noiseforfun.com/2012-sound-effects/magic-wish-02/\r\n\r\nItem\nhttps://www.noiseforfun.com/2012-sound-effects/soap/\r\n\r\nWin\nhttps://www.noiseforfun.com/2012-sound-effects/glocken-good/\r\n\r\nLose\r\nhttps://www.noiseforfun.com/2012-sound-effects/choice-bad/\r\n\r\nButton\r\nhttps://www.noiseforfun.com/2012-sound-effects/menu-04-a/"
+  m_Text: "SFX\n\nAngel\nhttps://www.noiseforfun.com/2012-sound-effects/magic-wish-02/\r\n\r\nItem\nhttps://www.noiseforfun.com/2012-sound-effects/soap/\r\n\r\nWin\nhttps://www.noiseforfun.com/2012-sound-effects/glocken-good/\r\n\r\nLose\r\nhttps://www.noiseforfun.com/2012-sound-effects/choice-bad/\r\n\r\nButton\r\nhttps://www.noiseforfun.com/2012-sound-effects/menu-04-a/"
 --- !u!222 &543563196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -908,8 +1020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 269, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 176, y: -108}
+  m_SizeDelta: {x: 207, y: 207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189628292
 MonoBehaviour:
@@ -993,9 +1105,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 6c384bb93ea862c4a9a0b38b3b20bf34, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1040,7 +1152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -166.85, y: -389.29}
+  m_AnchoredPosition: {x: 14, y: -329}
   m_SizeDelta: {x: 120, y: 104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233210702
@@ -1172,8 +1284,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -207, y: 126}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -114, y: 80}
+  m_SizeDelta: {x: 258.6, y: 258.6}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1275400026
 MonoBehaviour:
@@ -1268,9 +1380,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 01e0bc16519c7474385f9ab5e1588f69, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1310,6 +1422,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 379647917}
+  - {fileID: 431687190}
   m_Father: {fileID: 95912581}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1410,8 +1523,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 622b60385e1c8364590034a19c1a33f5, type: 3}
   - {fileID: 8300000, guid: 7b1ba3bf6d9ea754b8036c03cbbe358b, type: 3}
   - {fileID: 8300000, guid: 5eba82aba80be7749860130c55c62829, type: 3}
-  bgmSource: {fileID: 379647916}
+  bgmSource1: {fileID: 379647916}
+  bgmSource2: {fileID: 431687189}
   sfxSource: {fileID: 1362917422}
+  bgmImg: {fileID: 1189628293}
+  sfxImg: {fileID: 1943986958}
+  musicOn: {fileID: 21300000, guid: 6c384bb93ea862c4a9a0b38b3b20bf34, type: 3}
+  musicOff: {fileID: 21300000, guid: 133c4cfc46f59ad47b524296af1f905c, type: 3}
+  soundOn: {fileID: 21300000, guid: d57062dc5127c974aadf7e35d063593f, type: 3}
+  soundOff: {fileID: 21300000, guid: e2364d258730788498dd32a1a7974768, type: 3}
 --- !u!1 &1383068529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,8 +1809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.638, y: -90.4}
-  m_SizeDelta: {x: 314.98, y: 150.9}
+  m_AnchoredPosition: {x: -286.5, y: -47.5}
+  m_SizeDelta: {x: 481, y: 250.4}
   m_Pivot: {x: 0.49999985, y: 0.5}
 --- !u!114 &1400240043
 MonoBehaviour:
@@ -1862,7 +1982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.55, y: -390}
+  m_AnchoredPosition: {x: 197, y: -329.71}
   m_SizeDelta: {x: 102.6, y: 102.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509789655
@@ -2116,7 +2236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0627451, g: 0.7568628, b: 0.9568628, a: 1}
+  m_Color: {r: 0, g: 0.631701, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2232,8 +2352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 269, y: -105}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 428.39996, y: -108.000015}
+  m_SizeDelta: {x: 207, y: 207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943986957
 MonoBehaviour:
@@ -2317,9 +2437,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: d57062dc5127c974aadf7e35d063593f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

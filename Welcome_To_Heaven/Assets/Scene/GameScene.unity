@@ -518,8 +518,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 378569455103a04469804f5eb3bb072f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1789,7 +1789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 734, y: 334}
+  m_AnchoredPosition: {x: 653.66003, y: 334}
   m_SizeDelta: {x: 80.34, y: 77.92}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &583290907
@@ -1885,8 +1885,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dcb9dc2d4fa51e54fa49f6dfac5d2be5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2102,7 +2102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 734, y: 240.8}
+  m_AnchoredPosition: {x: 764, y: 334}
   m_SizeDelta: {x: 80.34, y: 77.92}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &619721313
@@ -2198,8 +2198,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 01e0bc16519c7474385f9ab5e1588f69, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4303,7 +4303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1563296826850574, guid: c38f8b77663eb4444969c4face17a081, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1492814468787606, guid: c38f8b77663eb4444969c4face17a081, type: 2}
       propertyPath: m_Name
@@ -4320,6 +4320,20 @@ Prefab:
     - target: {fileID: 1492814468787606, guid: c38f8b77663eb4444969c4face17a081, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114787596647586188, guid: c38f8b77663eb4444969c4face17a081,
+        type: 2}
+      propertyPath: m_Text
+      value: 'You have returned to
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114033882643869582, guid: c38f8b77663eb4444969c4face17a081,
+        type: 2}
+      propertyPath: m_Text
+      value: '
+
+        ~your bed~'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c38f8b77663eb4444969c4face17a081, type: 2}
@@ -4573,7 +4587,12 @@ MonoBehaviour:
   bgmSource1: {fileID: 575474919}
   bgmSource2: {fileID: 1489495130}
   sfxSource: {fileID: 1392052226}
-  bgm1: 0
+  bgmImg: {fileID: 0}
+  sfxImg: {fileID: 0}
+  musicOn: {fileID: 0}
+  musicOff: {fileID: 0}
+  soundOn: {fileID: 0}
+  soundOff: {fileID: 0}
 --- !u!1 &1435082482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,8 +4983,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3aaa62324a643a44f93d1c8c8e9476c5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5269,8 +5288,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 672d35eec4c04c644a8e742df301a086, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6306,8 +6325,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a2eaa88befc5ff1448df19d20ece88a1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6931,6 +6950,13 @@ Prefab:
     - target: {fileID: 1064906953536518, guid: d8357009c5b4fdb45b25b8c8fc8cd655, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114768420449848364, guid: d8357009c5b4fdb45b25b8c8fc8cd655,
+        type: 2}
+      propertyPath: m_Text
+      value: '
+
+        ~Heaven~'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8357009c5b4fdb45b25b8c8fc8cd655, type: 2}
