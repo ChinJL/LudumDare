@@ -8,6 +8,7 @@ public class Preview : MonoBehaviour {
 	private bool lerpBackCam;
 	GameEvent gameEvent;
 	[SerializeField] private GameObject EventManager = null;
+	[SerializeField] private GameObject audioManager = null;
 
 	void Awake(){
 		mc_temp.SetActive (false);
@@ -32,6 +33,7 @@ public class Preview : MonoBehaviour {
 
 	void PlayGame(){
 		gameEvent.StartReadyUp();
+		audioManager.GetComponent<AudioManager> ().PlayMusic2 ();
 	}
 
 	void Update(){

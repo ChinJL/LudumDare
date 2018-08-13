@@ -6,8 +6,9 @@ public class AudioManager : MonoBehaviour {
 
 	public static AudioManager audioManager;
 	[SerializeField] private AudioClip[] audios = null;
-	[SerializeField] private AudioSource bgmSource = null, sfxSource = null;
+	[SerializeField] private AudioSource bgmSource1 = null, bgmSource2 = null, sfxSource = null;
 	private bool isBGM, isSFX;
+	public bool bgm1;
 
 	public enum Sfx{
 		angel, item, win, lose, button
@@ -20,7 +21,12 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	public void PlayMusic(){
-		audioManager.bgmSource.Play ();
+			audioManager.bgmSource1.Play ();
+	}
+
+	public void PlayMusic2(){
+		audioManager.bgmSource1.Stop ();
+		audioManager.bgmSource2.Play ();
 	}
 
 	private void PlaySfx(Sfx element){
@@ -64,9 +70,11 @@ public class AudioManager : MonoBehaviour {
 	public void ToggleBgm(){
 		isBGM = !isBGM;
 		if (isBGM) {
-			bgmSource.volume = 1;
+			bgmSource1.volume = 1;
+			bgmSource2.volume = 1;
 		} else {
-			bgmSource.volume = 0;
+			bgmSource1.volume = 0;
+			bgmSource2.volume = 0;
 		}
 	}
 
