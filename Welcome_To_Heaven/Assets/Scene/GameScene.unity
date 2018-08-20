@@ -2008,7 +2008,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5cd55690e5e2793498fe5d7fe5ded5a1, type: 3}
   emptySprite: {fileID: 21300000, guid: a8534fbb5b44673459417339f2b7f5db, type: 3}
   speedReduction:
-  - 3.75
+  - 4.75
   - -6.45
   - -1.35
   effectTime:

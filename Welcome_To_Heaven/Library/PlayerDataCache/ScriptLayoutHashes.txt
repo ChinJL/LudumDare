@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-E:/Git/LudumDare/Welcome_To_Heaven/Welcome_To_Heaven.exe
+D:/LudumDare/Welcome_To_Heaven/Welcome_To_Heaven.exe
 SceneListBegin?
 Assets/Scene/MainMenuScene.unity
 Assets/Scene/GameScene.unity
